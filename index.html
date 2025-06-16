@@ -1,0 +1,197 @@
+<style>
+    body {
+        background: linear-gradient(135deg, #1b1f3b, #283e51);
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    .Upper {
+        color: #f1f1f1;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .Projects {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        color: #eaeaea;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         margin-bottom: 40px;
+    }
+
+    .ProjectsText {
+        font-size: 32px;
+        color: #00d9ff;
+        text-shadow: 0 0 10px rgba(0, 217, 255, 0.4);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .LogoPic {
+        width: 280px;
+        box-shadow: 0 0 12px rgba(0, 217, 255, 0.4);
+        border-radius: 14px;
+    }
+
+    .PROJECT {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 420px;
+        width: 260px;
+        background: linear-gradient(145deg, #2e3a59, #3b4a68);
+        color: #ffffff;
+        cursor: pointer;
+        padding-top: 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+        font-weight: 600;
+        border: 1px solid rgba(0, 217, 255, 0.2);
+        box-shadow: 0 8px 20px rgba(0, 217, 255, 0.1);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .PROJECT:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+        background: linear-gradient(145deg, #384b6a, #43587a);
+    }
+
+    .ButtonPic {
+        width: 200px;
+        margin-bottom: 18px;
+        border-radius: 20px;
+        border: 2px solid rgba(0, 217, 255, 0.3);
+    }
+
+    .ProjectsTextContainer {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .ButtonTextBelow {
+        font-size: 15px;
+        color: #cfd9e0;
+        text-align: center;
+        font-weight: 400;
+        padding: 0 10px;
+    }
+
+    .Infos{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        flex-direction: row;
+    }
+
+    .InfoButton{
+        height: 40px;
+        width: 145px;
+        font-size: 20px;
+        border-width: 1px;
+        border-radius: 10px;
+        border-color:  rgba(0, 217, 255, 0.2);
+        background: linear-gradient(145deg, #2e3a59, #3b4a68);
+        box-shadow:  0 0 20px rgba(0, 217, 255, 0.3);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    .InfoButton:hover{
+        transform: scale(1.04);
+        box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+        background: linear-gradient(145deg, #384b6a, #43587a);
+    }
+</style>
+
+<div class="Upper">
+    <h1>Welcome to the official site of Mayfly Studios</h1>
+    <p>Hungarian Gamedevelopment</p>
+    <img src="StudioLogo.png" alt="Logo" class="LogoPic">
+</div>
+
+<div class="Infos">
+    <button class="InfoButton" onclick="window.open('https://mayfly-studios.itch.io')">Our Itch.io</button>
+    <button class="InfoButton" onclick="window.open('https://discord.com/users/730438003192758283')">Contact</button>
+    <button class="InfoButton" onclick="window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0')">About</button>
+</div>
+
+<div class="ProjectsTextContainer">
+    <p class="ProjectsText">GAMES</p>
+</div>
+
+<div class="Projects">
+    <button class="PROJECT">
+        <img src="OPNCUb.png" alt="Game1" class="ButtonPic" onclick="window.open('https://mayfly-studios.itch.io/a-late-night-walk')">
+        Late Night Walk
+        <div class="ButtonTextBelow">
+             <p>Free</p>
+             <p>- Short horror game</p>
+             <p>- Web & Windows versions</p>
+             <p>- 3 different endings</p>
+        </div>
+    </button>
+
+    <button class="PROJECT">
+        <img src="F07uZS.gif" alt="Game2" class="ButtonPic" onclick="window.open('https://mayfly-studios.itch.io/candle-lighter')">
+        Candle Lighter
+        <div class="ButtonTextBelow">
+             <p>Free</p>
+             <p>- Short horror game</p>
+             <p>- Web & Windows versions</p>
+             <p>- Made in 1 week (There are some bugs)</p>
+        </div>
+    </button>
+</div>
+
+<div class="ProjectsTextContainer">
+    <p class="ProjectsText">GAME ASSETS</p>
+</div>
+
+<div class="Projects">
+    <button class="PROJECT">
+        <img src="Banner.jpg" alt="Asset1" class="ButtonPic" onclick="window.open('https://mayfly-studios.itch.io/retro-furniture-pack-psx')">
+        Retro Kitchen Furniture
+        <div class="ButtonTextBelow">
+             <p>1.20&#36</p>
+             <p>- 128x128 textures optimized for PS1 style games</p>
+             <p>- Openable Doors</p>
+             <p>- low poly models</p>
+        </div>
+    </button>
+
+    <button class="PROJECT">
+        <img src="8gWWla.gif" alt="Asset2" class="ButtonPic" onclick="window.open('https://mayfly-studios.itch.io/retro-houses-pack')">
+        Retro Houses Pack
+        <div class="ButtonTextBelow">
+             <p>1.10&#36</p>
+             <p>- 128x128 textures optimized for PS1 style games</p>
+             <p>- 3 different types of houses</p>
+             <p>- low poly models</p>
+        </div>
+    </button>
+
+    <button class="PROJECT">
+        <img src="StreetBanner.jpg" alt="Asset3" class="ButtonPic" onclick="window.open('https://mayfly-studios.itch.io/retro-street-pack-psx')">
+        Retro Street Assets
+        <div class="ButtonTextBelow">
+             <p>1.20&#36</p>
+             <p>- 128x128 textures optimized for PS1 style games</p>
+             <p>- 6 different types of objects</p>
+             <p>- low poly models</p>
+        </div>
+    </button>
+</div>
